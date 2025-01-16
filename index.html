@@ -55,7 +55,7 @@
 
     .hero {
       height: 70vh;
-      background: url('https://upload.wikimedia.org/wikipedia/commons/4/45/Science_drawing.png') no-repeat center center/cover;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/f/f3/Chemical_reaction_animation.gif') no-repeat center center/cover;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -92,32 +92,21 @@
       line-height: 1.6;
     }
 
-    .images-section {
-      display: flex;
-      justify-content: space-evenly;
-      flex-wrap: wrap;
-      gap: 20px;
-      margin-top: 30px;
-    }
-
-    .image-container {
-      width: 300px;
-      height: 200px;
-      overflow: hidden;
+    .animated-background {
+      height: 300px;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/1/12/Reaction_with_liquid_nitrogen.gif') no-repeat center center/cover;
       border-radius: 10px;
-      box-shadow: 0 0 15px rgba(255, 0, 79, 0.4);
+      margin: 20px 0;
       position: relative;
     }
 
-    .image-container img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.3s ease;
-    }
-
-    .image-container:hover img {
-      transform: scale(1.1);
+    .animated-background h3 {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      color: white;
+      text-shadow: 0 0 10px #000;
+      font-size: 1.5em;
     }
   </style>
 </head>
@@ -154,16 +143,8 @@
         <li>Технологии 3D-печати для восстановления тканей.</li>
       </ul>
     </div>
-    <div class="images-section">
-      <div class="image-container">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Ultrasound_image_of_a_female_pelvis.png" alt="УЗИ диагностика">
-      </div>
-      <div class="image-container">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Human_cell_division.png" alt="Клеточное деление">
-      </div>
-      <div class="image-container">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/3D_Printed_Medical_Tools.jpg" alt="3D технологии">
-      </div>
+    <div class="animated-background">
+      <h3>Инновации в гинекологии</h3>
     </div>
   </section>
 
@@ -173,13 +154,8 @@
       <h3>Нанотехнологии</h3>
       <p>MIT разработал нанороботов для диагностики заболеваний, включая рак яичников, что позволяет минимизировать риск и улучшить качество лечения.</p>
     </div>
-    <div class="images-section">
-      <div class="image-container">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Nanotechnology.jpg" alt="Нанотехнологии">
-      </div>
-      <div class="image-container">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Medical_scientist_in_lab.jpg" alt="Лаборатория">
-      </div>
+    <div class="animated-background">
+      <h3>Исследования нанотехнологий</h3>
     </div>
   </section>
 
