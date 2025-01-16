@@ -9,7 +9,7 @@
       font-family: 'Arial', sans-serif;
       margin: 0;
       padding: 0;
-      background: #0a0a0a;
+      background: linear-gradient(to bottom, #0a0a0a, #1a1a1a);
       color: #ffffff;
       overflow-x: hidden;
     }
@@ -17,7 +17,7 @@
     header {
       text-align: center;
       padding: 20px;
-      background: linear-gradient(90deg, #ff004f, #800030);
+      background: linear-gradient(90deg, #ff004f, #7d0038);
       box-shadow: 0px 4px 15px rgba(255, 0, 79, 0.7);
     }
 
@@ -54,7 +54,7 @@
     }
 
     .hero {
-      height: 70vh;
+      height: 80vh;
       background: url('https://upload.wikimedia.org/wikipedia/commons/f/f3/Chemical_reaction_animation.gif') no-repeat center center/cover;
       display: flex;
       align-items: center;
@@ -66,6 +66,7 @@
       font-size: 3em;
       text-shadow: 0 0 15px #ff004f;
       animation: glow 2s infinite alternate;
+      color: #ffffff;
     }
 
     @keyframes glow {
@@ -78,12 +79,12 @@
     }
 
     section {
-      padding: 40px;
+      padding: 60px;
       text-align: center;
     }
 
     .info {
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
       padding: 20px;
       background: rgba(255, 0, 79, 0.1);
@@ -92,11 +93,44 @@
       line-height: 1.6;
     }
 
+    .images-section {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .image-container {
+      width: 300px;
+      height: 200px;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255, 0, 79, 0.4);
+      position: relative;
+      transition: transform 0.3s;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .image-container:hover img {
+      transform: scale(1.1);
+    }
+
+    .image-container:hover {
+      transform: translateY(-10px);
+    }
+
     .animated-background {
       height: 300px;
       background: url('https://upload.wikimedia.org/wikipedia/commons/1/12/Reaction_with_liquid_nitrogen.gif') no-repeat center center/cover;
       border-radius: 10px;
-      margin: 20px 0;
+      margin: 30px 0;
       position: relative;
     }
 
@@ -107,6 +141,19 @@
       color: white;
       text-shadow: 0 0 10px #000;
       font-size: 1.5em;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      color: #fff;
+      margin-top: 40px;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 0.9em;
     }
   </style>
 </head>
@@ -119,40 +166,42 @@
   <nav>
     <a href="#about">Обо мне</a>
     <a href="#gynecology">Гинекология</a>
-    <a href="#discoveries">Открытия</a>
+    <a href="#discoveries">Научные открытия</a>
   </nav>
 
   <div class="hero">
-    <h2>Будущее медицины</h2>
+    <h2>Будущее науки и медицины</h2>
   </div>
 
   <section id="about">
     <h2>Обо мне</h2>
     <div class="info">
-      <p>Мохидил Зокиржановна - молодой исследователь, вдохновленный передовыми исследованиями из Гарварда, MIT и Оксфорда. Её исследования включают инновации в области гинекологии, биологии и химии.</p>
+      <p>Мохидил Зокиржановна - исследователь с инновационным подходом. Её исследования сосредоточены на соединении химии, биологии и медицины, вдохновленных работами Гарварда, MIT и Оксфорда. Её цель - разработка технологий, улучшающих здоровье человечества.</p>
     </div>
   </section>
 
   <section id="gynecology">
     <h2>Гинекология</h2>
     <div class="info">
-      <p>Современная гинекология делает акцент на здоровье женщин. Разработки включают:</p>
-      <ul>
-        <li>Методы ранней диагностики рака шейки матки с использованием ИИ.</li>
-        <li>Гормональные препараты нового поколения, разработанные на основе исследований MIT.</li>
-        <li>Технологии 3D-печати для восстановления тканей.</li>
-      </ul>
+      <p>Современные исследования в гинекологии включают использование ИИ для ранней диагностики заболеваний, нанотехнологий для лечения рака и технологий 3D-печати для восстановления тканей.</p>
     </div>
-    <div class="animated-background">
-      <h3>Инновации в гинекологии</h3>
+    <div class="images-section">
+      <div class="image-container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Ultrasound_image_of_a_female_pelvis.png" alt="УЗИ диагностика">
+      </div>
+      <div class="image-container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Human_cell_division.png" alt="Клеточное деление">
+      </div>
+      <div class="image-container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/3D_Printed_Medical_Tools.jpg" alt="3D технологии">
+      </div>
     </div>
   </section>
 
   <section id="discoveries">
     <h2>Научные открытия</h2>
     <div class="info">
-      <h3>Нанотехнологии</h3>
-      <p>MIT разработал нанороботов для диагностики заболеваний, включая рак яичников, что позволяет минимизировать риск и улучшить качество лечения.</p>
+      <p>Включают нанороботов для точной доставки лекарств, биоинформатику для анализа геномов и бионические технологии для восстановления тканей.</p>
     </div>
     <div class="animated-background">
       <h3>Исследования нанотехнологий</h3>
