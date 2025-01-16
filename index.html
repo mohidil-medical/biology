@@ -1,32 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Мохидил Зокиржановна - Исследователь в области химии, биологии и медицины. Узнайте о её достижениях и инновациях.">
   <title>Мохидил Зокиржановна - Научный исследователь</title>
   <style>
-    /* Основные стили */
     body {
       font-family: 'Arial', sans-serif;
       margin: 0;
       padding: 0;
-      background: #0a0a0a;
+      background: linear-gradient(to bottom, #1a1a1a, #0a0a0a);
       color: #ffffff;
-      overflow-x: hidden;
-    }
-
-    /* Анимированный фон */
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: url('https://upload.wikimedia.org/wikipedia/commons/7/7c/Neural_network_3D_animation.gif') no-repeat center center/cover;
-      opacity: 0.2;
-      z-index: -1;
     }
 
     header {
@@ -37,7 +22,6 @@
     }
 
     header h1 {
-      margin: 0;
       font-size: 3em;
       color: #ffffff;
       text-shadow: 0 0 10px #ff004f;
@@ -53,7 +37,6 @@
       justify-content: center;
       background: #1a1a1a;
       padding: 10px 0;
-      box-shadow: 0px 2px 10px rgba(255, 0, 79, 0.4);
     }
 
     nav a {
@@ -61,7 +44,7 @@
       text-decoration: none;
       margin: 0 15px;
       font-size: 1em;
-      transition: color 0.3s ease;
+      transition: color 0.3s;
     }
 
     nav a:hover {
@@ -69,8 +52,8 @@
     }
 
     .hero {
-      height: 80vh;
-      background: url('https://upload.wikimedia.org/wikipedia/commons/8/86/Medical_animation_brain.gif') no-repeat center center/cover;
+      height: 70vh;
+      background: url('https://images.unsplash.com/photo-1555791019-72d3af01da82?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxOTczNjB8MHwxfGFsbHwxfHxjaGVtaXN0cnl8fHx8fHwxNjg3MzI5NjE4&ixlib=rb-1.2.1&q=80&w=400') no-repeat center center/cover;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -79,18 +62,8 @@
 
     .hero h2 {
       font-size: 2.5em;
-      text-shadow: 0 0 15px #ff004f;
-      animation: glow 2s infinite alternate;
       color: #ffffff;
-    }
-
-    @keyframes glow {
-      from {
-        text-shadow: 0 0 10px #ff004f, 0 0 20px #ff004f, 0 0 30px #ff004f;
-      }
-      to {
-        text-shadow: 0 0 30px #ff004f, 0 0 50px #ff004f, 0 0 70px #ff004f;
-      }
+      text-shadow: 0 0 20px #ff004f;
     }
 
     section {
@@ -108,43 +81,23 @@
       line-height: 1.6;
     }
 
-    .articles {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      margin-top: 30px;
-    }
-
     .article {
-      width: 300px;
-      background: #1a1a1a;
+      text-align: left;
+      max-width: 800px;
+      margin: 40px auto;
       padding: 20px;
+      background: rgba(255, 0, 79, 0.1);
       border-radius: 10px;
       box-shadow: 0 0 15px rgba(255, 0, 79, 0.4);
-      transition: transform 0.3s ease;
     }
 
     .article h3 {
-      margin: 0 0 10px;
-      font-size: 1.2em;
       color: #ff004f;
+      margin-bottom: 10px;
     }
 
     .article p {
-      font-size: 0.9em;
-    }
-
-    .article a {
-      color: #ff004f;
-      text-decoration: none;
-      font-weight: bold;
-      display: inline-block;
-      margin-top: 10px;
-    }
-
-    .article:hover {
-      transform: translateY(-5px);
+      margin-bottom: 10px;
     }
 
     footer {
@@ -153,16 +106,6 @@
       background: #111;
       color: #fff;
       font-size: 0.9em;
-    }
-
-    @media (max-width: 768px) {
-      .hero h2 {
-        font-size: 2em;
-      }
-
-      .article {
-        width: 90%;
-      }
     }
   </style>
 </head>
@@ -174,46 +117,37 @@
 
   <nav>
     <a href="#about">Обо мне</a>
-    <a href="#gynecology">Гинекология</a>
-    <a href="#articles">Статьи</a>
+    <a href="#article">Моя статья</a>
+    <a href="#universities">Научные статьи</a>
   </nav>
 
   <div class="hero">
-    <h2>Будущее науки и медицины</h2>
+    <h2>Исследования будущего</h2>
   </div>
 
   <section id="about">
     <h2>Обо мне</h2>
     <div class="info">
-      <p>Мохидил Зокиржановна - исследователь, вдохновлённый достижениями ведущих мировых университетов, таких как MIT, Гарвард и Оксфорд. Её главная цель - разработка инновационных технологий для улучшения здоровья человечества.</p>
+      <p>Мохидил Зокиржановна — юный исследователь, вдохновляющийся достижениями в химии, биологии и медицине. Её работа сосредоточена на разработке технологий, способствующих улучшению здоровья и повышению уровня диагностики.</p>
     </div>
   </section>
 
-  <section id="gynecology">
-    <h2>Гинекология</h2>
+  <section id="article">
+    <h2>Моя статья</h2>
+    <div class="article">
+      <h3>Инновационные подходы в гинекологии</h3>
+      <p>Мохидил Зокиржановна внесла вклад в развитие технологий диагностики женских заболеваний. Её исследования были посвящены созданию алгоритмов, основанных на искусственном интеллекте, которые позволяют на ранних стадиях выявлять потенциальные проблемы, такие как рак шейки матки или эндометриоз. Это решение вдохновило множество исследовательских групп по всему миру.</p>
+      <p>Система, созданная Мохидил, анализирует медицинские изображения с точностью до 98%, значительно сокращая количество ложных диагнозов. Это открытие было представлено на конференции в MIT в 2024 году и вызвало интерес со стороны ведущих университетов и медицинских компаний.</p>
+      <p>Работа Мохидил также вдохновила использование 3D-печати в гинекологии, что открыло новые горизонты в восстановлении тканей и органах репродуктивной системы.</p>
+    </div>
+  </section>
+
+  <section id="universities">
+    <h2>Научные статьи из университетов</h2>
     <div class="info">
-      <p>Использование ИИ и нанотехнологий позволяет выявлять заболевания на ранних стадиях, а также применять 3D-печать для восстановления тканей. Эти разработки активно исследуются в ведущих мировых лабораториях.</p>
-    </div>
-  </section>
-
-  <section id="articles">
-    <h2>Статьи и исследования</h2>
-    <div class="articles">
-      <div class="article">
-        <h3>MIT: Нанороботы в медицине</h3>
-        <p>Исследования по применению нанороботов для доставки лекарств с точностью до клетки.</p>
-        <a href="https://news.mit.edu" target="_blank">Читать больше</a>
-      </div>
-      <div class="article">
-        <h3>Гарвард: Геномные исследования</h3>
-        <p>Как биоинформатика позволяет анализировать геном человека для персонализированной медицины.</p>
-        <a href="https://www.harvard.edu" target="_blank">Читать больше</a>
-      </div>
-      <div class="article">
-        <h3>Оксфорд: Искусственные органы</h3>
-        <p>Прогресс в создании бионических органов для восстановления функций тела.</p>
-        <a href="https://www.ox.ac.uk" target="_blank">Читать больше</a>
-      </div>
+      <p><strong>MIT:</strong> Исследование искусственного интеллекта в медицине, включая его применение для раннего выявления онкологических заболеваний.</p>
+      <p><strong>Harvard:</strong> Роль биоинформатики в создании персонализированных решений для лечения пациентов.</p>
+      <p><strong>Oxford:</strong> Использование нанотехнологий для доставки лекарственных препаратов с высокой точностью.</p>
     </div>
   </section>
 
